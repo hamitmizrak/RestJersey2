@@ -4,7 +4,8 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-// localhos:8080/JerseyRest/rest/Path
+// localhost:8080/JerseyRest/rest/Path
+// yeni url ==> https://github.com/hamitmizrak/RestJersey2.git
 
 @Path("/produces")
 public class Rest_001_Produces_String {
