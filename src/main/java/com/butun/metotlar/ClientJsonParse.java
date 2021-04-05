@@ -9,8 +9,9 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 
+//GitHub uri: Repository https://github.com/hamitmizrak/RestJersey2.git
 public class ClientJsonParse {
-
+	// Veri almak
 	public String veriAl(String uri) {
 		Client client = ClientBuilder.newClient();
 		WebTarget webTarget = client.target("http://localhost:8080/JerseyRest2/jersey2/jsonp/advancedJson");
@@ -19,6 +20,24 @@ public class ClientJsonParse {
 		return str;
 	}
 
+	// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+	// String parçalama
+	public void stringParse(String veriAl) {
+
+		Client client = ClientBuilder.newClient();
+		WebTarget webTarget = client.target("http://localhost:8080/JerseyRest/jersey/client/string");
+		String str = webTarget.request("text/plain; charset=UTF-8").get(String.class);
+		// System.out.println(str);
+
+		String[] parcala = str.split(" ");
+		for (String temp : parcala) {
+			System.out.println(temp);
+		}
+		System.out.println(parcala[4]);
+	}
+
+	// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+	// Json Parse
 	public void jsonParse(String veriAl) {
 		// [] olarak gelmiş olsa ==> JsonArray
 		// {} olarak gelmiş olsa ==> JsonObject
