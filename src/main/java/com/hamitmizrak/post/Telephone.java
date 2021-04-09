@@ -5,10 +5,10 @@ import java.io.Serializable;
 public class Telephone implements Serializable {
 	private static final long serialVersionUID = -4585606167843454634L;
 
-	private long telephoneId;
-	private String telName;
-	private String telNumber;
-	private String telSerial;
+	private long telephoneId = 0;
+	private String telName = "";
+	private String telNumber = "";
+	private String telSerial = "";
 
 	public Telephone() {
 		// TODO Auto-generated constructor stub

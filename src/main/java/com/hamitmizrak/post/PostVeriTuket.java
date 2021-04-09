@@ -17,7 +17,7 @@ public class PostVeriTuket {
 
 	@POST
 	@Path("/veriDynamics")
-	@Consumes("application/json; charsete=UTF-8")
+	@Consumes("application/json; charset=UTF-8")
 	public void setTelephone(Telephone telephone) {
 		System.out.println(telephone);
 	}

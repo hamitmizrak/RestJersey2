@@ -17,7 +17,7 @@ public class ClientPostMainTest {
 		WebTarget webTarget = client.target("http://localhost:8080/JerseyRest2/jersey2/post/veriTuket");
 
 		webTarget.request("application/json; charset=UTF-8")
-				.post(Entity.entity(json2, "application/json; charset=UTF-8"), Void.class);
+				.post(Entity.entity(json, "application/json; charset=UTF-8"), Void.class);
 	}
 
 }
