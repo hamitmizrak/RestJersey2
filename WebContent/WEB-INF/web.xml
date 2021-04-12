@@ -15,7 +15,7 @@
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
     <init-param>
       <param-name>jersey.config.server.provider.packages</param-name>
-      <param-value>com.hamitmizrak.webjersey;com.hamitmizrak.pathparam;com.hamitmizrak.jsonp;com.hamitmizrak.jsonb;com.hamitmizrak.xmlp;com.hamitmizrak.xmlb;com.hamitmizrak.jackson;com.hamitmizrak.post;com.hamitmizrak.consumesproduces</param-value>
+      <param-value>com.hamitmizrak.matrixparam;com.hamitmizrak.getlist;com.hamitmizrak.webjersey;com.hamitmizrak.pathparam;com.hamitmizrak.jsonp;com.hamitmizrak.jsonb;com.hamitmizrak.xmlp;com.hamitmizrak.xmlb;com.hamitmizrak.jackson;com.hamitmizrak.post;com.hamitmizrak.consumesproduces</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
@@ -26,6 +26,16 @@
     <url-pattern>/jersey2/*</url-pattern>
   </servlet-mapping>
   
+  <!--  
+  Singleton
+   <servlet>
+	 <servlet-name>com.config.singleton.SingletonDesign</servlet-name>
+	 </servlet>
+	 	<servlet-mapping>
+		<servlet-name>com.config.singleton.SingletonDesign</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+  -->
  
   
   
